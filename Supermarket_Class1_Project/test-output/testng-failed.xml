@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="a1_Prg35_testscript.Prg36_ManageProduct_Test1">
+      <class name="a1_Prg35_testscript.SubCategory_TestCase">
         <methods>
-          <include name="enterValues"/>
-          <include name="beforeMethod"/>
           <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="enterValues"/>
         </methods>
-      </class> <!-- a1_Prg35_testscript.Prg36_ManageProduct_Test1 -->
+      </class> <!-- a1_Prg35_testscript.SubCategory_TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
