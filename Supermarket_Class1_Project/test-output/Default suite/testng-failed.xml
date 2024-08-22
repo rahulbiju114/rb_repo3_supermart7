@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="a1_Prg35_testscript.SubCategory_TestCase">
+      <class name="a1_Prg35_testscript.AdminUser_TestCase_Delete">
         <methods>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="enterValues"/>
         </methods>
-      </class> <!-- a1_Prg35_testscript.SubCategory_TestCase -->
+      </class> <!-- a1_Prg35_testscript.AdminUser_TestCase_Delete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -30,6 +30,16 @@ public class Constants {
 	
 	public static final String ERRORFORLOGINPAGEALERT4 ="Login page not loaded";
 	
+	// LoginPage_TestCase1 - ///////////4.  LOgOut ///////////////
+	
+	public static final String ERRORFORADMINUSERALERTDELETE ="User Not Deleted Successfully";
+	
+	// LoginPage_TestCase1 - ///////////4.  LOgOut ///////////////
+	
+	public static final String ERRORFORADMINUSERALERTACTIVE ="User Status Not Changed Successfully";
+	
+	
+	
 	
 	//===========================================================================================================================================================//
 	

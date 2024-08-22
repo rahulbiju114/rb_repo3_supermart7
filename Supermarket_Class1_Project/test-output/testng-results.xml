@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-22T19:38:09 IST" name="Default suite" finished-at="2024-08-22T19:38:15 IST" duration-ms="6342">
+  <suite started-at="2024-08-23T00:09:24 IST" name="Default suite" finished-at="2024-08-23T00:09:30 IST" duration-ms="6223">
     <groups>
     </groups>
-    <test started-at="2024-08-22T19:38:09 IST" name="Default test" finished-at="2024-08-22T19:38:15 IST" duration-ms="6342">
-      <class name="a1_Prg35_testscript.SubCategory_TestCase">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:a1_Prg35_testscript.SubCategory_TestCase@27462a88]" started-at="2024-08-22T19:38:09 IST" name="beforeMethod" finished-at="2024-08-22T19:38:12 IST" duration-ms="3112" status="PASS">
+    <test started-at="2024-08-23T00:09:24 IST" name="Default test" finished-at="2024-08-23T00:09:30 IST" duration-ms="6223">
+      <class name="a1_Prg35_testscript.AdminUser_TestCase_Delete">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:a1_Prg35_testscript.AdminUser_TestCase_Delete@27462a88]" started-at="2024-08-23T00:09:24 IST" name="beforeMethod" finished-at="2024-08-23T00:09:28 IST" duration-ms="3361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="enterValues()[pri:0, instance:a1_Prg35_testscript.SubCategory_TestCase@27462a88]" started-at="2024-08-22T19:38:12 IST" name="enterValues" finished-at="2024-08-22T19:38:15 IST" duration-ms="3183" status="PASS">
+        <test-method signature="enterValues()[pri:0, instance:a1_Prg35_testscript.AdminUser_TestCase_Delete@27462a88]" started-at="2024-08-23T00:09:28 IST" name="enterValues" finished-at="2024-08-23T00:09:30 IST" duration-ms="2818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterValues -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:a1_Prg35_testscript.SubCategory_TestCase@27462a88]" started-at="2024-08-22T19:38:15 IST" name="afterMethod" finished-at="2024-08-22T19:38:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:a1_Prg35_testscript.AdminUser_TestCase_Delete@27462a88]" started-at="2024-08-23T00:09:30 IST" name="afterMethod" finished-at="2024-08-23T00:09:30 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- a1_Prg35_testscript.SubCategory_TestCase -->
+      </class> <!-- a1_Prg35_testscript.AdminUser_TestCase_Delete -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

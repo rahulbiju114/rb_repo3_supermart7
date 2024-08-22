@@ -14,6 +14,7 @@ public class BaseClass {
 	  
 	  driver =  new ChromeDriver();
 	  driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/login");
+	  
 	  driver.manage().window().maximize();
   }
   

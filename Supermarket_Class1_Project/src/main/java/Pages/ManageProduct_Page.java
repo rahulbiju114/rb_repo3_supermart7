@@ -45,7 +45,7 @@ public WebDriver driver;
 	
 	
 	
-	@FindBy(xpath="//i[@class='fas fa-trash-alt']") WebElement delete1;        // 2. Delete an item from the list
+	@FindBy(xpath="//i[@class='fas fa-trash-alt']") WebElement delete1;        // 2. Delete an item from the list        ---error - (//i[@class='fas fa-trash-alt'])[1]
 	public void getClickedDelete() 
 	{
 		delete1.click();
