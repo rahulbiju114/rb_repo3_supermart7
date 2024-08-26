@@ -28,14 +28,15 @@ public class LoginPage_TestCase1 extends BaseClass{
 	
 														/////// 1. valid User name and valid  password //////
    	
-  @Test(priority = 1 , dataProvider = "credentials")
-  public void enterValues1(String uA1,String pA1) throws IOException {
+  @Test(priority = 1)
+  
+  public void enterValues1() throws IOException {
 	  
 //	  String uA1 = "admin";     			// Directly give value - 1st way
 //	 String uA1 = "admin";
 	  
-//	  String uA1 = Exel_Utility.getStringData(1, 0, "Login1");   // 6Exel. 2nd way - Read from exel  // throws IOException
-//	  String pA1 = Exel_Utility.getStringData(1, 1, "Login1");
+	  String uA1 = Exel_Utility.getStringData(1, 0, "Login1");   // 6Exel. 2nd way - Read from exel  // throws IOException
+	  String pA1 = Exel_Utility.getStringData(1, 1, "Login1");
 	  
 	 
 	  LoginPage_Page p1 = new LoginPage_Page(driver);
@@ -54,14 +55,14 @@ public class LoginPage_TestCase1 extends BaseClass{
   
   														//////2. valid User name and invalid password ///////
   
-  @Test(priority = 2)
-  public void enterValues2() throws IOException {
+  @Test(priority = 2 , dataProvider = "credentials")
+  public void enterValues2(String uA1,String pA1) throws IOException {
 	  
 //	  String uA1 = "admin";
 //	  String pA1 = "password";
 	  
-	  String uA1 = Exel_Utility.getStringData(1, 0, "Login2");   // 6Exel. 2nd way - Read from exel  // throws IOException
-	  String pA1 = Exel_Utility.getStringData(1, 1, "Login2");
+//	  String uA1 = Exel_Utility.getStringData(1, 0, "Login2");   // 6Exel. 2nd way - Read from exel  // throws IOException
+//	  String pA1 = Exel_Utility.getStringData(1, 1, "Login2");
 	  
 	  
 	  LoginPage_Page p2 = new LoginPage_Page(driver);
