@@ -6,6 +6,8 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Constants.Constants;
@@ -14,16 +16,26 @@ import Utilities.Exel_Utility;
 
 public class LoginPage_TestCase1 extends BaseClass{
 	
+	@DataProvider(name="credentials")
+	public Object[][] testData(){				// data provider
+		Object[][] input = new Object[2][2];
+		input[0][0] = "admin";
+		input[0][1] = "admin";
+		input[1][0] = "admin@123";
+		input[1][1] = "admin123";
+		return input;
+	}
+	
 														/////// 1. valid User name and valid  password //////
    	
-  @Test(priority = 1)
-  public void enterValues1() throws IOException {
+  @Test(priority = 1 , dataProvider = "credentials")
+  public void enterValues1(String uA1,String pA1) throws IOException {
 	  
 //	  String uA1 = "admin";     			// Directly give value - 1st way
-//	  String pA1 = "admin";
+//	 String uA1 = "admin";
 	  
-	  String uA1 = Exel_Utility.getStringData(1, 0, "Login1");   // 6Exel. 2nd way - Read from exel  // throws IOException
-	  String pA1 = Exel_Utility.getStringData(1, 1, "Login1");
+//	  String uA1 = Exel_Utility.getStringData(1, 0, "Login1");   // 6Exel. 2nd way - Read from exel  // throws IOException
+//	  String pA1 = Exel_Utility.getStringData(1, 1, "Login1");
 	  
 	 
 	  LoginPage_Page p1 = new LoginPage_Page(driver);
@@ -66,13 +78,14 @@ public class LoginPage_TestCase1 extends BaseClass{
   														//////3. invalid User name and valid password ////////
   
   @Test(priority = 3)
-  public void enterValues3() throws IOException {
+  @Parameters({"username","password"})
+  public void enterValues3( String uA1, String pA1 ) throws IOException {
 	  
 //	  String uA1 = "a";
 //	  String pA1 = "admin";
 	  
-	  String uA1 = Exel_Utility.getStringData(1, 0, "Login3");   // 6Exel. 2nd way - Read from exel  // throws IOException
-	  String pA1 = Exel_Utility.getStringData(1, 1, "Login3");
+//	  String uA1 = Exel_Utility.getStringData(1, 0, "Login3");   // 6Exel. 2nd way - Read from exel  // throws IOException
+//	  String pA1 = Exel_Utility.getStringData(1, 1, "Login3");
 	  
 	  
 	  LoginPage_Page p2 = new LoginPage_Page(driver);
