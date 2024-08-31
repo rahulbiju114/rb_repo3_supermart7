@@ -8,7 +8,7 @@
   <test thread-count="5" name="Extend_Report">
   
   <classes>
-  <class name="a1_Prg35_testscript.LoginPage_TestCase1"></class>
+  <class name="testscripts.LoginPage_TestCase1"></class>
   </classes>
   
   </test> <!-- 7Mart_Test1 -->

@@ -5,13 +5,13 @@
   <parameter name="username" value="a"/>
   <test thread-count="5" name="Parameter_Test(failed)">
     <classes>
-      <class name="a1_Prg35_testscript.LoginPage_TestCase1">
+      <class name="testscripts.LoginPage_TestCase1">
         <methods>
-          <include name="afterMethod"/>
           <include name="enterValues3"/>
-          <include name="beforeMethod"/>
+          <include name="intializeMethod"/>
+          <include name="browserQuit"/>
         </methods>
-      </class> <!-- a1_Prg35_testscript.LoginPage_TestCase1 -->
+      </class> <!-- testscripts.LoginPage_TestCase1 -->
     </classes>
   </test> <!-- Parameter_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

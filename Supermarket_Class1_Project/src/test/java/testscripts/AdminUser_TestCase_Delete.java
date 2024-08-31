@@ -1,4 +1,4 @@
-package a1_Prg35_testscript;
+package testscripts;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,7 +11,7 @@ import Pages.AdminUsers_Page;
 import Pages.LoginPage_Page;
 import Utilities.Exel_Utility;
 
-public class AdminUser_TestCase_ActiveButton extends BaseClass {
+public class AdminUser_TestCase_Delete extends BaseClass{
   @Test
   public void enterValues() throws IOException {
 	  
@@ -27,9 +27,12 @@ public class AdminUser_TestCase_ActiveButton extends BaseClass {
 		
 		AdminUsers_Page admin1 = new AdminUsers_Page(driver);
 		admin1.clickAdminUser();
-		admin1.clickActiveButton();
-		
+		admin1.deleteAdminUser();
+	
 		boolean isAlert = admin1.isAlertDisplayed();
-		assertTrue(isAlert, Constants.ERRORFORADMINUSERALERTACTIVE);
+		assertTrue(isAlert, Constants.ERRORFORADMINUSERALERTDELETE);
+		
+	  
   }
+  
 }

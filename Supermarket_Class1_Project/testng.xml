@@ -4,7 +4,7 @@
   <test thread-count="5" name="7Mart_Test1">
     <classes>
      
-      <class name="a1_Prg35_testscript.LoginPage_TestCase1">
+      <class name="testscripts.LoginPage_TestCase1">
       
       <methods>
       

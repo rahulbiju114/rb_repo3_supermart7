@@ -1,6 +1,6 @@
 
 
-package a1_Prg35_testscript;
+package testscripts;
 
 import static org.testng.Assert.assertTrue;
 
