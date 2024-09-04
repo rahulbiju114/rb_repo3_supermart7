@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>															 <!--1st chrome browser launch then only edge launch -->
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="CrossBrowsingTesting">
 	<listeners>
@@ -33,7 +33,7 @@
 -->		
 
 			<classes>
-			<class name="testscripts.SubCategory_TestCase">
+			<class name="testscripts.Category_TestCase">
 				<methods>
 					<include name="enterValues"></include>
 				</methods>

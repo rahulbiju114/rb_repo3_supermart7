@@ -54,6 +54,12 @@ public class Constants {
 	
 	
 
-}
+
 
 	//===========================================================================================================================================================//
+
+
+	// grouping - path of config.properties
+	public static final String CONSTFILE = System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties";
+			
+}

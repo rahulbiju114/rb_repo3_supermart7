@@ -12,7 +12,7 @@ import Pages.LoginPage_Page;
 import Utilities.Exel_Utility;
 
 public class AdminUser_TestCase_Delete extends BaseClass{
-  @Test
+  @Test(priority = 1, retryAnalyzer = retry.Retry.class)
   public void enterValues() throws IOException {
 	  
 	  String uA1 = Exel_Utility.getStringData(1, 0, "Login1");   // 6Exel. 2nd way - Read from exel  // throws IOException
