@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ParallelTesting]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Chrome Test(failed)">
-    <parameter name="Browser" value="Chrome"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="7Mart_Test1(failed)">
     <classes>
-      <class name="testscripts.SubCategory_TestCase">
+      <class name="testscripts.LoginPage_TestCase1">
         <methods>
           <include name="intializeMethod"/>
-          <include name="enterValues"/>
+          <include name="enterValues2"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- testscripts.SubCategory_TestCase -->
+      </class> <!-- testscripts.LoginPage_TestCase1 -->
     </classes>
-  </test> <!-- Chrome Test(failed) -->
-</suite> <!-- Failed suite [ParallelTesting] -->
+  </test> <!-- 7Mart_Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
