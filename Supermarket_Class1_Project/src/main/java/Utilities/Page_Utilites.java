@@ -27,7 +27,38 @@ public class Page_Utilites {
 	}
 	
 
+	/////////////////////////////////////////////////////////////////////////////
 	
+	public void scrollDownX280Y280()
+	{
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(280,280)");
+	}
+	public void scrollDownX300Y300()
+	{
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(300,300)");
+	}
+	public void scrollDownX380Y380()
+	{
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(380,380)");
+	}
+	public void scrollDownX893Y61()
+	{
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(893,61)");
+	}
+	public void scrollDownX900Y900()
+	{
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(900,900)");
+	}
+	public void scrollBackToTop()
+	{
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0,0)");		
+	}
 	
 	
 

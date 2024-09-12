@@ -1,10 +1,15 @@
 package Pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import Constants.Constants;
+import Utilities.FileUpload_Utilities;
 import Utilities.Wait_Utilities;
 
 public class Category_Page {
@@ -55,12 +60,17 @@ public class Category_Page {
 		
 		//upload image
 		
+		FileUpload_Utilities fileupload = new FileUpload_Utilities();
 				
 		@FindBy(xpath="//input[@name='main_img']") WebElement image1;				//5.choose image -- not working
 		public void chooseImage() {
 			
-			image1.sendKeys("C:\\Users\\rahul\\Desktop\\img1.jpg");            //// doubt- click and select - NO
+		//	image1.sendKeys("C:\\Users\\rahul\\Desktop\\img1.jpg");            //// doubt- click and select - NO
 			
+			JavascriptExecutor js=(JavascriptExecutor) driver;
+			js.executeScript("window.scrollBy(250,250)");
+			
+			fileupload.uploadDiscountImageForManageCategory(image1,Constants.DISCOUNTIMAGE); //(3)
 			
 		}
 		
@@ -98,8 +108,10 @@ public class Category_Page {
 		@FindBy(xpath="//button[@name='create']")WebElement save1;
 		public void clickSave() {
 			
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			
 			save1.click();       
-			wt.waitforCategory(save1);
+	//		wt.waitforCategory(save1);
 			
 			
 		}

@@ -18,5 +18,29 @@ WebDriver driver;
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
+	
+	// implict wait added in Category_page - save button
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	public void Wait(WebElement element2)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.elementToBeClickable(element2));
+	}
+	public void wait(WebElement element3)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.elementToBeClickable(element3));
+	}
+	public void waiting(WebElement element4)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
+		wait.until(ExpectedConditions.elementToBeClickable(element4));
+	}
+	public void implicitWait()
+	{
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	}
+
 
 }

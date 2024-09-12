@@ -62,4 +62,10 @@ public class Constants {
 	// grouping - path of config.properties
 	public static final String CONSTFILE = System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties";
 			
+
+
+//===========================================================================================================================================================//
+// photo upload - category
+	public static final String DISCOUNTIMAGE=System.getProperty("user.dir")+"\\src\\test\\resources\\img1.jpg";  //(1)
+
 }

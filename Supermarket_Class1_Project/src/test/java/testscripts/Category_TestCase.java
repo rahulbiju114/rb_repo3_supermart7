@@ -42,7 +42,7 @@ public class Category_TestCase extends BaseClass{
 	
 	
 	p2.clickGroup();
-//	p2.chooseImage();
+//	p2.chooseImage(); //(4)
 	
 	p2.clickSave();
 	p2.pageScrolldown(); 		// Work by 1st way of utility
